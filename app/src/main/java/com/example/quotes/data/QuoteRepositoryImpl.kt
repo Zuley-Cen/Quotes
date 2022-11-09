@@ -13,11 +13,14 @@ class QuoteRepositoryImpl @Inject constructor
     QuoteRepository {
 
     override suspend fun getQuoteRandom(): Flow<QuoteModel> {
-        return  localDataSource.getQuoteRandom()
+        return localDataSource.getQuoteRandom()
     }
 
     override suspend fun getQuote(quoteId: Int): Flow<QuoteModel> {
         return localDataSource.getQuote(quoteId)
     }
 
+    override suspend fun addQuote(quoteModel: QuoteModel) {
+        localDataSource.insert(quote=quoteModel)
+    }
 }
