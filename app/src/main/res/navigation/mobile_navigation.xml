@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.quotes.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:name="edu.itvo.quotescelebrities.presentation.view.QuoteRandomFragment"
+        android:label="@string/menu_quote_randomly"
         tools:layout="@layout/fragment_quote_random" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.quotes.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_quote_add" />
+        android:id="@+id/nav_quote_list"
+        android:name="edu.itvo.quotescelebrities.presentation.view.QuoteListFragment"
+        android:label="@string/menu_quote_list"
+        tools:layout="@layout/fragment_quote_list" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.quotes.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_login"
+        android:name="edu.itvo.quotescelebrities.presentation.view.LoginFragment"
+        android:label="@string/menu_user_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
