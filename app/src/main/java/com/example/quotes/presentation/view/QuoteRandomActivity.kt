@@ -1,23 +1,18 @@
-
 package com.example.quotes.presentation.view
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.quotes.R
 import com.example.quotes.databinding.ActivityMainBinding
 import com.example.quotes.presentation.viewmodel.QuoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class QuoteRandomActivity : AppCompatActivity() {
 
-    private lateinit var binding:
-            ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private val quoteViewModel: QuoteViewModel by viewModels()
 
 
@@ -46,3 +41,4 @@ class MainActivity : AppCompatActivity() {
 
 
 }
+
